@@ -59,6 +59,12 @@ body {
 }
 
 @media (max-width: 530px) {
+.InputEmail {
+  width: 60%;
+}
+.email-btn {
+  width: 35%;
+}
   .cat {
     width: 320px;
     height: 220px;
@@ -66,6 +72,14 @@ body {
   #hash {
     font-size: 1.4em;
   }
+}
+@media (min-width: 530px) {
+.InputEmail {
+  width: 75%;
+}
+.email-btn {
+  width: 20%;
+}
 }
 @media (max-width: 768px) and  (min-width: 530px) {
   .cat {
@@ -284,11 +298,9 @@ body {
   width: 100%;
 }
 .InputEmail {
-  width: 74%;
   display: inline;
 }
 .email-btn {
-  width: 20%;
   display: inline;
   float: right;
   color: #9583B2;
@@ -296,7 +308,6 @@ body {
   border: none;
   font-size: 1.2em;
   font-weight: 900;
-  min-width: 90px;
 }
 
 .block-pink p a {
