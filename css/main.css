@@ -58,6 +58,24 @@ body {
   background-color: #FFFCF4;
 }
 
+@media (max-width: 530px) {
+  .cat {
+    width: 320px;
+    height: 220px;
+  }
+  #hash {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 768px) and  (min-width: 530px) {
+  .cat {
+    width: 500px;
+    height: 320px;
+  }
+  #hash {
+    font-size: 2em;
+  }
+}
 @media (max-width: 768px) {
   .nav-alice {
     flex-direction: column;
@@ -68,15 +86,8 @@ body {
   .nav-alice li:last-child {
     border-bottom: 1px solid rgba(255,255,255,0);
   }    
-  .cat {
-  	width: 500px;
-    height: 320px;
-  }
   .decor {
     display: none;
-  }
-  #hash {
-    font-size: 2em;
   }
 }
 @media (min-width: 768px){ 
@@ -113,6 +124,13 @@ body {
   .graphic {
   }   
 }
+
+.graphic img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 .block {
   padding: 4em 0;
   width: 100%;
@@ -249,6 +267,9 @@ body {
   text-align: left;
   font-family: Bitter;
 }
+.subs p {
+  margin-bottom: 1em;
+}
 #subs-title {
   color: #FFDF31;
   font-size: 1.6em;
@@ -262,8 +283,8 @@ body {
   font-weight: 900;
   width: 100%;
 }
-#InputEmail {
-  width: 78%;
+.InputEmail {
+  width: 74%;
   display: inline;
 }
 .email-btn {
@@ -275,6 +296,7 @@ body {
   border: none;
   font-size: 1.2em;
   font-weight: 900;
+  min-width: 90px;
 }
 
 .block-pink p a {
