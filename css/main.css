@@ -119,6 +119,9 @@ body {
 }
 
 @media (max-width: 992px) {
+  #potion {
+    display: none;
+  }
   .foot-mob {
     display: block;
   }
@@ -152,7 +155,7 @@ body {
 .block {
   padding: 4em 0;
   width: 100%;
-  font-family: Bitter;
+  font-family: Source Sans Pro;
 }
 .block h1 {
   font-size: 2em;
@@ -172,7 +175,9 @@ body {
   margin-top: 1.4em;
 }
 .block p {
-  font-size: 1.2em;
+  font-size: 1.23em;
+  font-weight: 300;
+  line-height: 1.37em;
   margin-bottom: 0.6em;
 }
 .block p a {
@@ -324,4 +329,9 @@ body {
 }
 .mc-modal {
     top: 10em !important;
+}
+
+.response {
+  margin-top: 0.5em;
+  color: #FFDF31;
 }
