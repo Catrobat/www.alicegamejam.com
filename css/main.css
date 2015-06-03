@@ -8,11 +8,11 @@ body {
   width: 100%;
   font-family: Bitter;
 }
-
+/*
 #navbar {
   max-height: none;
 }
-
+*/
 .navbar-default {
   border: none;
   -moz-box-shadow:    0px 0px 5px 1px rgba(0,0,0,0.5);
@@ -36,20 +36,20 @@ body {
 }
 
 .nav-alice li a {
-	font-size: 1.2em;
-	padding: 28px;
-	color: #FFF;
+  font-size: 1.2em;
+  padding: 1em;
+  color: #FFF;
 }
 
 .nav-alice li a:hover {
-	color: #3A0748;
-	background-color: #9583B2;	
+  color: #3A0748;
+  background-color: #9583B2;	
 }
 
 .navbar-alice {
-	font-family: PT Sans;
-	min-height: 76px;
-	background-color: #9583B2;
+  font-family: PT Sans;
+  min-height: 76px;
+  background-color: #9583B2;
 }
 
 .navbar-toggle {
