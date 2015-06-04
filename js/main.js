@@ -1,6 +1,6 @@
 'use strict';
 
-$( window ).resize(function() {
+function mobileMenuResize() {
   var h = $( window ).height();
   //console.log("Resize happened. Height = " + h + " px");
   h = h - 70;
@@ -8,8 +8,10 @@ $( window ).resize(function() {
   //console.log("Can fit = " + items_to_fit );
   var menu_h = items_to_fit * 58;
   $("#navbar").css("max-height", (menu_h+"px"));
-  
-});
+}
+$( document ).ready(mobileMenuResize());
+$( window ).resize(mobileMenuResize());
+
 
 $(".scroll").click(function(event){
      event.preventDefault();
