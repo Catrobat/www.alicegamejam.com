@@ -173,6 +173,10 @@ body {
   margin-bottom: 0.6em;
   margin-top: 1.4em;
 }
+.block h2 a{
+  text-decoration: none;
+  color: inherit;
+}
 .block h3 {
   font-size: 1.2em;
   margin-top: 1.4em;
