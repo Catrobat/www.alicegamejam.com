@@ -29,6 +29,17 @@
   </head>
 
   <body>
+  
+    <script>
+    function displaySuscribe(){
+        if(document.getElementById('hidden_suscribe').style.display=='block') {
+            document.getElementById('hidden_suscribe').style.display='none';
+        }else{
+            document.getElementById('hidden_suscribe').style.display='block';
+        }
+    }
+    </script>
+  
     <!-- Fixed navbar -->
     <nav class="navbar navbar-alice navbar-default navbar-fixed-top">
       <div class="container">
@@ -48,10 +59,34 @@
             <li><a class="scroll" href="#participate">PARTICIPATE</a></li>
             <li><a class="scroll" href="#partners">PARTNERS</a></li>
             <li><a href="faq.html">FAQs</a></li>
-            <li><a class="scroll" href="#subscribe">NEWSLETTER</a></li>
+            <li><a href="javascript:void(0)" onClick="displaySuscribe();">NEWSLETTER</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
+
+          <div id="hidden_suscribe" style="display:none;width: 100%; text-align:center; align:center;">
+          <div id="subs-title">
+            <a id="subscribe">SUBSCRIBE TO THE #AliceGameJam NEWSLETTER</a>
+          </div>
+          <div id="subs-form">
+            <div class="form-group">
+            <form action="//alicegamejam.us11.list-manage.com/subscribe/post?u=0b9fae19769e4e37a9195caab&amp;id=aa85d19a67" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	      <input value="" name="EMAIL" class="required form-control email InputEmail" id="mce-EMAIL" placeholder="Enter your email here...">
+               <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default email-btn" onClick="document.getElementById('subs-form').innerHTML = 'Thank you for subscription!';">
+	      <div id="mce-responses" class="clear">
+	      	<div class="response" id="mce-error-response" style="display:none"></div>
+	      	<div class="response" id="mce-success-response" style="display:none"></div>
+	      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_0b9fae19769e4e37a9195caab_aa85d19a67" tabindex="-1" value=""></div>
+              <!--<input class="btn btn-default email-btn" type="submit" value="Subscribe">-->
+            </form>
+            </div>
+          </div>
+          <div id="close_hidden">
+            <a href="javascript:void(0)" onClick="displaySuscribe();">[Close]</a><br/><br/>
+          </div>
+        </div>
+  
     </nav>
 
     <div class="block-violet">
@@ -309,51 +344,6 @@
       </div>
     </div> <!-- /container -->
     </div>  
-
-<!-- the <br /> below are here so that jumping to the bottom FAQ entries works as well -->
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
