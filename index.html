@@ -28,6 +28,17 @@
   </head>
 
   <body>
+  
+    <script>
+    function displaySuscribe(){
+        if(document.getElementById('hidden_suscribe').style.display=='block') {
+            document.getElementById('hidden_suscribe').style.display='none';
+        }else{
+            document.getElementById('hidden_suscribe').style.display='block';
+        }
+    }
+    </script>
+  
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-alice navbar-default navbar-fixed-top">
@@ -48,9 +59,31 @@
             <li><a class="scroll" href="#participate">PARTICIPATE</a></li>
             <li><a class="scroll" href="#partners">PARTNERS</a></li>
             <li><a href="faq.html">FAQs</a></li>
-            <li><a class="scroll" href="#subscribe">NEWSLETTER</a></li>
+            <li><a href="javascript:void(0)" onClick="displaySuscribe();">NEWSLETTER</a></li>
           </ul>
         </div><!--/.nav-collapse -->
+      </div>
+      
+      <!--Newsletter -->
+      <div id="hidden_suscribe">
+            SUBSCRIBE TO THE #AliceGameJam NEWSLETTER
+          <div id="hidden_subs-form">
+            <div class="form-group">
+            <form action="//alicegamejam.us11.list-manage.com/subscribe/post?u=0b9fae19769e4e37a9195caab&amp;id=aa85d19a67" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	      <input value="" name="EMAIL" class="required form-control email InputEmail" id="mce-EMAIL" placeholder="Enter your email here...">
+               <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default email-btn" onClick="document.getElementById('subs-form').innerHTML = 'Thank you for subscription!';">
+	      <div id="mce-responses" class="clear">
+	      	<div class="response" id="mce-error-response" style="display:none"></div>
+	      	<div class="response" id="mce-success-response" style="display:none"></div>
+	      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_0b9fae19769e4e37a9195caab_aa85d19a67" tabindex="-1" value=""></div>
+              <!--<input class="btn btn-default email-btn" type="submit" value="Subscribe">-->
+            </form>
+            </div>
+          </div>
+          <div id="hidden_close">
+            <a href="javascript:void(0)" onClick="displaySuscribe();">[X]</a><br/><br/>
+          </div>
       </div>
     </nav>
 
@@ -83,15 +116,15 @@
           <h2>Share this event with your friends!</h2>
           <p>
             <div class="social">
-            <a href="https://plus.google.com/+Alicegamejam_07-13_Dec_2015">
-              <img class="share" height="50" width="50" src="img/svg/google.png"/>
-            </a>
-            <a href="https://www.facebook.com/AliceInWonderlandGameJam">
-              <img class="share" height="50" width="50" src="img/svg/facebook.png"/>
-            </a>     
-            <a href="https://twitter.com/AliceGameJam">
-              <img class="share" height="50" width="50" src="img/svg/twitter.png"/>
-            </a> 
+                <a target="popup" href="https://plus.google.com/share?url=https%3A%2F%2Fplus.google.com%2F%2BAlicegamejam_07-13_Dec_2015" rel="publisher" style="text-decoration:none;" alt="Google+" >
+                <img class="share" height="50" width="50" src="img/svg/google.png"/>
+                </a>
+                <a target="popup" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffacebook.com%2FAliceInWonderlandGameJam" rel="publisher" style="text-decoration:none;" alt="Facebook" >
+                <img class="share" height="50" width="50" src="img/svg/facebook.png"/>
+                </a>
+                <a target="popup" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.alicegamejam.com&text=Try%20the%20new%20%23AliceGameJam%20at&via=AliceGameJam" rel="publisher" style="text-decoration:none;" alt="Twitter" >
+                <img class="share" height="50" width="50" src="img/svg/twitter.png"/>
+                </a>
             </div>                     
           </p>
           <h2>Pocket Code is free on Google Play!</h2>
@@ -306,51 +339,6 @@
       </div>
     </div> <!-- /container -->
     </div>  
-
-<!-- the <br /> below are here so that jumping to the bottom FAQ entries works as well -->
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
-	  <br />
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
