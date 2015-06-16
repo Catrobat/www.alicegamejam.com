@@ -365,17 +365,37 @@ body {
 #hidden_suscribe {
   width: 100%;
   display: none;
+  margin-top: 1em;
   text-align: center;
   color: #FFDF31;
   font-weight: 900;
   text-align: center;
   font-family: PT Sans;
+  border-top-style: solid;
+  border-color: #FFFFFF;
+  border-width: 1px;
 }
 
 #hidden_subs-form {
   margin: 1em auto auto auto;
+  font-family: Bitter;  
+  font-size: 1.2em;
 }
+
+#hidden_subs-form input {
+  font-weight: lighter;
+}
+
 
 #hidden_close a{
   color: #FFFFFF;
+}
+
+#hidden_subs-title {
+  color: #FFDF31;
+  font-size: 1.6em;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 1em;
+  font-family: PT Sans;
 }
