@@ -379,8 +379,16 @@ body {
 #hidden_subs-form {
   margin: 1em auto auto auto;
   font-family: Bitter;  
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: lighter;
+}
+
+#hidden_subs-form input[type=email]{
+  font-weight: lighter;
+}
+
+#hidden_subs-form input[type=submit] {
+  height: 2em;
 }
 
 #hidden_close a{
