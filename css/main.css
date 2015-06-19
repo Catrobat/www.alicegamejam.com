@@ -380,12 +380,8 @@ body {
   margin: 1em auto auto auto;
   font-family: Bitter;  
   font-size: 1.2em;
-}
-
-#hidden_subs-form input {
   font-weight: lighter;
 }
-
 
 #hidden_close a{
   color: #FFFFFF;
@@ -398,4 +394,5 @@ body {
   text-align: center;
   margin-top: 1em;
   font-family: PT Sans;
+  text-decoration: none;
 }
