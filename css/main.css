@@ -235,6 +235,10 @@ body {
   position: relative;
 }
 
+.block-turquoise p a{
+  color: #fff9b2;
+}
+
 .rel {
   position: relative;
 }
