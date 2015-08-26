@@ -9,10 +9,9 @@ body {
   font-family: Bitter;
 }
 #cooperation {
-  width: 100%;
-  text-align:center;
-  margin-top: 2em;
+  text-align: center;
 }
+
 #navbar {
   max-height: 240px;
   margin-top: 20px;
@@ -78,6 +77,10 @@ body {
   #hash {
     font-size: 1.4em;
   }
+    #cooperation img {
+	max-width: 100%;
+	}
+  
 }
 @media (min-width: 530px) {
 .InputEmail {
@@ -86,6 +89,9 @@ body {
 .email-btn {
   width: 20%;
 }
+  #cooperation img {
+	max-width: 75%;
+  }
 
 }
 @media (max-width: 768px) and  (min-width: 530px) {
@@ -96,6 +102,7 @@ body {
   #hash {
     font-size: 2em;
   }
+
 
 }
 @media (max-width: 768px) {
@@ -124,6 +131,7 @@ body {
   #hash {
     font-size: 2.4em;
   }
+
   #only-mobile {
     display: none;
   }
@@ -257,8 +265,17 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+.play-btn {
+	text-align: center;
+}
+
 .play-btn img{
     border-radius: 10px;
+	height: 50px;
+	width: auto;
+	margin-bottom: 0.5em;
+	
 }
 
 #potion {
