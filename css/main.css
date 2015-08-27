@@ -161,6 +161,7 @@ body {
   .container {
     width: 100%;
   }
+
 }
 @media (min-width: 992px) {
   .foot-mob {
@@ -170,7 +171,8 @@ body {
     display: block;
   }
   .graphic {
-  }   
+  } 
+ 
 }
 
 .graphic img {
@@ -301,7 +303,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;	
-	margin: 4em 0 8em;
+	margin: 4em 0 3em;
 }
 .logos div {
 	order: 1;
@@ -440,4 +442,19 @@ body {
 }
 .partner_section img{
 	margin: 1em 1em 1em 1em;
+}
+.intext_logo img{
+	max-width: 90%;
+} 
+
+.intext_logo h2 {
+	
+	margin-top: 0em;
+	vertical-align: center;
+}
+
+.intext_logo {
+  height: 80px;
+  line-height: 80px;
+  vertical-align: middle;
 }
