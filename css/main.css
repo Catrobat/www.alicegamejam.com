@@ -269,7 +269,8 @@ body {
 }
 
 .play-btn {
-	text-align: center;
+	text-align: left;
+	margin-left: 1em;
 }
 
 .play-btn img{
