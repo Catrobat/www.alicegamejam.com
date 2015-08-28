@@ -124,6 +124,25 @@ body {
   width: 95%;
   }
   
+  .logos div{
+	  width: 100%;
+  }
+    .logo-big {
+    /* custom width */
+    width:100%;
+	text-align: center;
+}
+    .logo-middle {
+    /* custom width */
+    width:50%;
+	text-align: center;
+}
+    .logo-small {
+    /* custom width */
+    width:33%;
+	text-align: center;
+}
+  
 }
 @media (min-width: 768px){ 
   .cat {
@@ -140,6 +159,21 @@ body {
   #hidden_subs-form {
   width: 60%;
   }
+  .logo-big {
+    /* custom width */
+    width:33%;
+	text-align: center;
+}
+  .logo-middle {
+    /* custom width */
+    width:25%;
+	text-align: center;
+}
+  .logo-small {
+    /* custom width */
+    width:20%;
+	text-align: center;
+}
 }
 
 @media (max-width: 992px) {
@@ -304,6 +338,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;	
 	margin: 4em 0 3em;
+	text-align:center;
 }
 .logos div {
 	order: 1;
@@ -437,12 +472,13 @@ body {
 }
 
 .partner_section {
-	text-align: center;
 	margin-bottom: 6em;
 }
-.partner_section img{
-	margin: 1em 1em 1em 1em;
+
+.partner_section img {
+	margin: 2em;
 }
+
 .intext_logo img{
 	max-width: 90%;
 } 
