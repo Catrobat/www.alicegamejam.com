@@ -26,23 +26,51 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	<script>
+	function countdown() {
+		var now = new Date();
+		var enddate = new Date("December 7, 2015 00:01:00");
+	
+		var timeleft = enddate.getTime() - now.getTime();
+	
+		if (timeleft <= 0) {
+			document.getElementById("daysBox").innerHTML = 0;
+			document.getElementById("hoursBox").innerHTML = 0;
+			document.getElementById("minsBox").innerHTML = 0;
+		}
+		else
+		{
+			var seconds = Math.floor(timeleft / 1000);
+			var minutes = Math.floor(timeleft / 1000 / 60);
+			var hours = Math.floor(minutes / 60);
+			var days = Math.floor(hours / 24);
+			hours %= 24;
+				minutes %= 60;
+				seconds %= 60;
+			document.getElementById("days").innerHTML = days;
+			document.getElementById("hours").innerHTML = hours;
+			document.getElementById("minutes").innerHTML = minutes;
+		}
+	}
+	</script>
+	
   </head>
 
-  <body>
+  <body onload="countdown();">
 <div class="main">
 <div class="characters"><img src="img/landing/AGJ-Landingpage-characters.png"></div>
 	<div class="content">
  		<img src="img/landing/AGJ-Landingpage-title.png">
 		<div class="counter">
 			<div class="counter-row">
-				<div class="circle">12</div>
-				<div class="circle">23</div>
-				<div class="circle">34</div>
+				<div class="circle" id="days"></div>
+				<div class="circle" id="hours"></div>
+				<div class="circle" id="minutes"></div>
 			</div>
 			<div class="counter-row">
-				<div class="counter_description"><p>Days</p></div>
-				<div class="counter_description"><p>Hours</p></div>
-				<div class="counter_description"><p>Minutes</p></div>
+				<div class="counter_description" ><p>Days</p></div>
+				<div class="counter_description" ><p>Hours</p></div>
+				<div class="counter_description" ><p>Minutes</p></div>
 			</div>
 		</div>
 		<div class="info">
