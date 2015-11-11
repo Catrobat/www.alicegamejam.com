@@ -13,7 +13,7 @@ body {
   border: 0;
   margin-left: 0;
   margin-right: 0;
-  background-image: url(../img/landing/AGJ-LandingPage-characters.png); 
+  background: green url(../img/landing/AGJ-LandingPage-characters.png); 
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
