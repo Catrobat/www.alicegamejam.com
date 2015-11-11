@@ -3,11 +3,12 @@ body {
 	margin: 0;
 	border: 0;
 	background: #467177 url(../img/landing/AGJ-Landingpage-BG-only.jpg) no-repeat top center; 
+	background-size: contain;
     background-repeat: repeat-x;
     background-position: center;
 }
 
-.characters-graphics {
+.main {
   padding: 0;
   margin: 0;
   border: 0;
@@ -16,11 +17,11 @@ body {
   overflow: hidden;
 }
 
-.characters-graphics img {
-  padding: 0;
-  margin: 0;
-  width: 100%;
+.characters {
+width: 100%;
+overflow: hidden;
 }
+
 
 .content {
 	text-align: center;
@@ -92,51 +93,16 @@ overflow: hidden;
 	margin-right:10pt;
 }
 
-#btn
-{
-	width: 200px;
-}
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
 
-
-.characters-graphics img {
-  width: 100%;
+.characters img {
+	width: 100%;
 }
 
 .content {
 	width: 600px;
-	height: 400px;
-	top: 48%;
-}
-
-
-.counter
-{
-		width: 60%;
-}
-
-.circle {
-	width: 100px;
-	height: 100px; 
-	margin-left: 10px;
-	margin-right: 10px;
-	padding-top: 0.1em;
-	font-size: 45pt;
-}
-
-}
-
-@media (max-width: 600px) {
-
-
-.characters-graphics img {
-  width: 90%;
-}
-
-.content {
-	width: 100%;
-	top: 25%;
+	top: 47%;
 }
 
 
@@ -152,7 +118,41 @@ overflow: hidden;
 	margin-left: 10px;
 	margin-right: 10px;
 	padding-top: 0.1em;
-	font-size: 20pt;
+	font-size: 45pt;
+}
+
+}
+
+@media (max-width: 650px) {
+
+	
+.characters img {
+	width: 100%;
+}
+
+.content {
+	width: 100%;
+	top: 25%;
+}
+
+.content img{
+	max-width: 90%;
+}
+
+
+.counter
+{
+		width: 400px;
+		margin: auto;
+}
+
+.circle {
+	width: 100px;
+	height: 100px; 
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 0.1em;
+	font-size: 45pt;
 }
 
 }
