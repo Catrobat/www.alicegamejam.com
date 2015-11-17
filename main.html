@@ -46,9 +46,9 @@
 		else{
 			document.getElementById('trailer').pause();
 		}
-		video.onended = function() {
-			video.poster='img/header.png';
-			video.load();
+		document.getElementById('trailer').onended = function() {
+			document.getElementById('trailer').poster='img/header.png';
+			document.getElementById('trailer').load();
 		}
 	}
     </script>
@@ -112,7 +112,6 @@
         <!--<div id="hash">#AliceGameJam</div>-->
 		<video poster="img/header-play.png" preload="none" onClick="videoClick()" id="trailer">
 			 <source src="img/trailer/trailer.mp4" type="video/mp4">
-			Not supported
 		</video>
 
 
