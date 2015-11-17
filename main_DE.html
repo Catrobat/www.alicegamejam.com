@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+	<link rel="icon" href="img/favicon.ico">
+
+    <title>Alice Game Jam</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  
+    <script>
+    function displaySuscribe(){
+        if(document.getElementById('hidden_suscribe').style.display=='block') {
+            document.getElementById('hidden_suscribe').style.display='none';
+        }else{
+            document.getElementById('hidden_suscribe').style.display='block';
+        }
+    }	
+	
+	function videoClick(){
+		if (document.getElementById('trailer').paused){
+			document.getElementById('trailer').play();
+		}
+		else{
+			document.getElementById('trailer').pause();
+		}
+		document.getElementById('trailer').onended = function() {
+			document.getElementById('trailer').poster='img/header.png';
+			document.getElementById('trailer').load();
+		}
+	}
+    </script>
+  
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-alice navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/Logo-AliceJam.png" height="45" width="241" /></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav nav-alice">
+            <li><a class="scroll" href="#about">ABOUT THE EVENT</a></li>
+            <li><a href="partners.html">PARTNERS</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="https://share.catrob.at/pocketalice/gaming-tutorials">TUTORIALS</a></li>
+            <li><a href="https://share.catrob.at/pocketalice/">WALL OF FAME</a></li>
+            <li><a href="javascript:void(0)" onClick="displaySuscribe();">NEWSLETTER</a></li>
+          </ul>
+		  <div class="language"><a href="main.html"><img src="img/flags/en.png"></a><a href="main_DE.html"><img src="img/flags/de.png"></a></div>
+        </div><!--/.nav-collapse -->
+      </div>
+
+      <!--Newsletter -->
+      <div id="hidden_suscribe">
+        <div id="hidden_subs-title">Abonniere #AliceGameJam NEWSLETTER</div>
+
+        <div id="hidden_subs-form">
+            <form action="//alicegamejam.us11.list-manage.com/subscribe/post?u=0b9fae19769e4e37a9195caab&amp;id=aa85d19a67" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <input type="email" value="" name="EMAIL" class="required form-control email InputEmail" id="mce-EMAIL" placeholder="Enter your email here...">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default email-btn">
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            </form>
+        </div>
+        <p>
+        <div id="hidden_close">
+            <a href="javascript:void(0)" onClick="displaySuscribe();">[X]</a>
+        </div>
+        </p>
+      </div>
+    </nav>
+    
+
+    
+    
+    
+    <div class="block-header">
+    <div class="container">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="cat">
+        <!--<img src="img/header-grafik.png">-->
+        <!--<div id="hash">#AliceGameJam</div>-->
+		<video poster="img/header-play.png" preload="none" onClick="videoClick()" id="trailer">
+			 <source src="img/trailer/trailer_de.mp4" type="video/mp4">
+		</video>
+      </div>
+	<div  id="cooperation" ><img src="img/cooperations.png"></div>
+    </div> <!-- /container -->
+    </div>
+
+    <div class="block block-turquoise">
+    <div class="container">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1><a id="about">Überblick</a></h1>
+        </div>
+        <div class="col-md-4">
+					<h2>#AliceGameJam</h2>
+					<p>Erkunde die Welt von Alice im Wunderland mit Pocket Code und Scratch beim #AliceGameJam während der Computer Science Education Week von 7. - 13. Dezember 2015. Erstelle deine eigene App über Alice und nutze die Chance, Teil etwas Großen zu werden.</p>
+          <h2>150 Jahre Alice im Wunderland</h2>
+          <p>Lewis Carroll’s Alice im Wunderland wurde 1865 veröffentlicht. Seit 150 Jahren haben die Abenteuer von Alice, dem weißen Hasen und den anderen Fabelwesen Jung und Alt begeistert. Der Alice Game Jam lädt dich ein, zwischen 7. und 13. Dezember 2015 diese fabelhaften Abenteuer, in Form von Spielen über Alice und ihre Freunde, neu zu erfinden.</p>
+          <h2>Alice' Geschichte</h2>
+					<p>Alice folgt einem weißen Hasen in den Hasenbau und findet sich selbst in einer magischen Welt wieder. Auf ihrer Reise durch das Wunderland findet sie neue Freunde wie den verrückten Hutmacher, oder die Grinsekatze und erlebt zusammen mit ihnen aufregende Abenteuer...</p>
+        </div>
+        <div class="col-md-4">
+					<div class="intext_logo"><img src="img/pc-headline.png"></img></div>
+          <p>Mit Pocket Code wollen wir Jugendliche inspirieren, ihre eigenen Spiele und interaktiven Geschichten direkt am Smartphone zu erstellen. Durch intuitives, “Lego”-artiges programmieren benötigt man kein Vorwissen.</p>
+          <div class="decor"><a href="http://www.pocketcode.org" target="blank_"><img src="img/modul1-device.png"/ width="100%"></a></div>
+          <h3>Pocket Code available for free at</h3>
+          <div class="play-btn"><a target="_blank" href="http://catrob.at/pc"><img src="img/GooglePlay.png"/></a></div>      
+       </div>
+        <div class="col-md-4">
+					<div class="intext_logo"><img src="img/scratch-headline.png" ></img></div>
+					<p>Verwende Scratch um deine eigenen Geschichten, Spiele und Animationen zu erstellen und teile diese mit anderen Teilnehmern auf der ganzen Welt. Besuche das <a href="http://scratch.mit.edu/wonderland" target="blank_">Alice in Wonderland Studio</a>, erkunde neue Projektideen und finde die Grinsekatze und andere Charaktere.</p>
+					<p>Gehe online und erwecke Alice zum Leben unter <a href="https://scratch.mit.edu/" target="blank_">scratch.mit.edu</a>.</p>
+					<br/><br/>
+					<div class="decor"><a href="https://scratch.mit.edu/" target="blank_"><img src="img/scratch-cat.png"/ width="100%"></a></div>
+        </div>
+      </div>
+    </div> <!-- /container -->
+    </div>   
+
+    <div class="block block-beige">
+    <div class="container">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1><a id="event">Die Veranstaltung</a></h1>
+        </div>
+        <div class="col-md-4">
+          <h2>Details</h2>
+          <p>Der Game Jam findet währen der internationalen Computer Science Education Week von 7. bis 13. Dezember 2015 statt. Alle wichtigen Informationen werden während dem Event auf dieser Webseite veröffentlicht, also bleib dran!</p>
+          <h2>Thema</h2>
+          <p>Alles dreht sich um Alice im Wunderland! Erstelle dein eigenes Spiel oder Geschichte über Alice’s wunderbare Abenteuer. Vergiss nicht auf den weißen Hasen, die Grinsekatze, den verrückten Hutmacher und all die anderen farbprächtigen Charaktere der Erzählung. Weiter Details zum Thema werden vor dem Beginn der Jam veröffentlicht.</p>
+          <h2>Überraschungsthema</h2>
+          <p>Als Spezialaufgabe kündigen wir zum Start der Game Jam ein mit Alice zusammenhängendes Überraschungsthema an.</p>
+<!--
+          <h3>Diversifiers:</h3>
+          <p>We will also announce some diversifiers that may give you additional winning chances, e.g., when you create a game that can be played with one finger only, or one that uses the compass sensor of your phone, … and many more!</p>
+ -->
+       </div>
+        <div class="col-md-4">
+          <h2>Wie kannst du Teil des Ganzen werden?</h2>
+          <p>Nimm entweder als Einzelperson oder im Team mit bis zu 4 Interessierten teil. Verwende  unsere gratis Smartphone-App <a target="_blank" href="http://catrob.at/pc">“Pocket Code”</a> oder die Web-basierte Plattform <a href="https://scratch.mit.edu/">Scratch</a> vom MIT Media Lab.</p>
+          <p>Weitere Informationen findest du auf unserer <a href="http://www.alicegamejam.com/faq.html">Frequently Asked Questions</a> Seite (englisch).</p>
+          <h2>Wall of Fame</h2>
+          <p>Alle eingereichten Spiele, Geschichten und Animationen werden während und nach dem Game Jam auf unserer <a href="fame.html">"Wall of Fame”</a> veröffentlicht. So kannst du dein Projekt mit deinen Freunden, deiner Familie und unserer ganzen Gemeinschaft teilen.</p>     
+
+					<h2>Teile diese Event mit all deinen Freunden!</h2>
+          <p>
+            <div class="social">
+                <a target="popup" href="https://plus.google.com/share?url=https%3A%2F%2Fplus.google.com%2F%2BAlicegamejam_07-13_Dec_2015" rel="publisher" style="text-decoration:none;" alt="Google+" >
+                <img class="share" height="50" width="50" src="img/svg/google_share.png"/>
+                </a>
+                <a target="popup" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffacebook.com%2FAliceInWonderlandGameJam" rel="publisher" style="text-decoration:none;" alt="Facebook" >
+                <img class="share" height="50" width="50" src="img/svg/facebook_share.png"/>
+                </a>
+                <a target="popup" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Falicegamejam.com&text=Be%20part%20of%20the%20%23AliceGameJam%20with%20your%20own%20%23HourOfCode%20at&via=AliceGameJam" rel="publisher" style="text-decoration:none;" alt="Twitter" >
+                <img class="share" height="50" width="50" src="img/svg/twitter_share.png"/>
+                </a>
+            </div>                     
+          </p>
+       </div>	   
+	   
+        <div class="col-md-4 decor">
+          <div class="graphic">
+						<img width="400" src="img/rabbit-color.png"/>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+    </div>    
+
+
+    <div class="block block-turquoise">
+    <div class="container rel">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="row">
+        <div class="col-md-12">
+          <h1><a id="participate">Teilnehmen</a></h1>
+        </div>
+        <div class="col-md-4">
+          <h2>Wie kannst du teilnehmen?</h2>
+          <p>DEntscheide, ob du alleine oder im Team arbeiten möchtest. Vergiss nicht auf das Überraschungsthema und die Diversifizierer, welche am 7. Dezember 2015 veröffentlicht werden. Folge den Regeln und beginne dein eigenes Pocket Code oder Scratsch Spiel über “Alice im Wunderland” zu erstellen.</p>
+          <h2>Einreichen</h2>
+          <p>Wenn du dein Spiel erstellt hast, lade es bei der dementsprechenden Platform (Pocket Code oder Scratch) hoch und versehe es mit dem Tag #AliceGameJam in der Beschreibung. Fülle dann das Teilnahmeformular aus, welches in Kürze auf dieser Seite veröffentlicht wird.</p>
+        </div>
+        <div class="col-md-4">
+					<h2>Wie lerne ich zu programmieren?</h2>
+					<p>Wenn du noch keine Programmiererfahrung hast brauchst du keine Angst zu haben. Es ist einfacher als du denkst! In der Tutorial Übersicht haben wir dir ein paar großartige Beispiele für Anfänger zur Verfügung gestellt. Hinter Pocke Code uns Scratch stehen ausserdem sehr große Gemeinschaften, die dir eine Vielzahl an Beispielen im Web zur Verfügung stellen.</p>
+					<h2>Finde die richtigen Zutaten für dein Spiel</h2>
+					<p>Um es dir leichter zu machen, stellen wir dir ein paar spezielle Grafiken zur Verfügung die du während des Game Jams gerne verwenden kannst. Um mehr über diese freien Mediequellen zu erfahren, lies dir bitte unsere FAQs durch.</p>
+					<p>Wenn du uns dabei unterstüzten willst, anderen beim Programmieren zu helfen, schau dir bitte unsere FAQ Seite an, dort findest du weiter Informationen.</p>
+        </div>
+      </div>
+		  <div id="potion" class="decor">
+        <img width="221" height="320" src="img/drink-me.png"/>
+      </div>
+    </div> <!-- /container -->
+    </div> 
+
+
+    <div class="block block-beige">
+    <div class="container">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="row decor">
+        <div class="col-md-12 graphic tea">
+          <img src="img/teaparty.png"/>        
+        </div>        
+      </div>       
+    </div> <!-- /container -->
+    </div>    
+
+
+    <div class="block block-pink">
+    <div class="container">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8 subs">
+          <div id="subs-title">
+            <a id="subscribe">Abonniere den #AliceGameJam NEWSLETTER</a>
+          </div>
+        <div id="subs-form">
+            <form action="//alicegamejam.us11.list-manage.com/subscribe/post?u=0b9fae19769e4e37a9195caab&amp;id=aa85d19a67" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <input type="email" value="" name="EMAIL" class="required form-control email InputEmail" id="mce-EMAIL" placeholder="Enter your email here...">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default email-btn">
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                </div>
+            </form>
+        </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="block block-pink">
+    <div class="container">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="row">
+        <div class="foot-mob">
+        <div class="col-md-4 foot-social">
+            <div class="social">
+            <a target="_blank" href="https://plus.google.com/+Alicegamejam_07-13_Dec_2015">
+              <img class="share" height="50" width="50" src="img/svg/google.svg"/>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/AliceInWonderlandGameJam" >
+              <img class="share" height="50" width="50" src="img/svg/facebook.svg"/>
+            </a>     
+            <a target="_blank" href="https://twitter.com/AliceGameJam">
+              <img class="share" height="50" width="50" src="img/svg/twitter.svg"/>
+            </a> 
+            </div>         
+        </div>      
+        </div>
+        <div class="col-md-2 foot-center">
+          <p><a href="mailto:alice@alicegamejam.com?subject=AliceGameJam">Contact</a></p>
+        </div>
+        <div class="col-md-2 foot-center">
+          <p><a href="terms.html">Terms&Privacy</a></p>
+        </div>
+        <div class="foot-desk">
+        <div class="col-md-4 foot-social">
+            <div class="social">
+            <a target="_blank" href="https://plus.google.com/+Alicegamejam_07-13_Dec_2015" rel="publisher" target="_top" style="text-decoration:none;" alt="Google+" >
+              <img class="share" height="50" width="50" src="img/svg/google.png"/>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/AliceInWonderlandGameJam" >
+              <img class="share" height="50" width="50" src="img/svg/facebook.png"/>
+            </a>     
+            <a target="_blank" href="https://twitter.com/AliceGameJam">
+              <img class="share" height="50" width="50" src="img/svg/twitter.png"/>
+            </a> 
+            </div>         
+        </div>
+        </div>
+        <div class="col-md-2 foot-center">
+          <p><a href="imprint.html">Imprint</a></p>
+        </div>
+        <div class="col-md-2 foot-center">          
+          <p><a target="_blank" href="http://www.catrobat.org/">©2015 Catrobat</a></p>
+        </div>                
+      </div>
+    </div> <!-- /container -->
+    </div>  
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>    
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-42270417-6', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
+

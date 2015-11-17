@@ -234,6 +234,9 @@ body {
     display: none;
   }
 
+  .language {
+	right: 5em;
+}
 }
 @media (min-width: 992px) {
   .foot-mob {
@@ -242,7 +245,9 @@ body {
   .foot-desk {
     display: block;
   }
-
+  
+  .language {
+	right: 1em;
  
 }
 
@@ -539,4 +544,14 @@ body {
 .logo-small img {
 	max-width: 90%;
 	height: auto;
+}
+
+.language {
+	position: absolute;
+	top: 0.5em;
+}
+
+.language img {
+	width: 30px;
+	margin-left: 0.5em;
 }
