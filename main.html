@@ -38,6 +38,19 @@
             document.getElementById('hidden_suscribe').style.display='block';
         }
     }
+	
+	function videoClick(){
+		if (document.getElementById('trailer').paused){
+			document.getElementById('trailer').play();
+		}
+		else{
+			document.getElementById('trailer').pause();
+		}
+		video.onended = function() {
+			video.poster='img/header.png';
+			video.load();
+		}
+	}
     </script>
   
 
@@ -96,7 +109,13 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="cat">
         <!--<img src="img/header-grafik.png">-->
-        <div id="hash">#AliceGameJam</div>
+        <!--<div id="hash">#AliceGameJam</div>-->
+		<video poster="img/header-play.png" preload="none" onClick="videoClick()" id="trailer">
+			 <source src="img/trailer/trailer.mp4" type="video/mp4">
+			Not supported
+		</video>
+
+
       </div>
 	<div  id="cooperation" ><img src="img/cooperations.png"></div>
     </div> <!-- /container -->

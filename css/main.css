@@ -300,8 +300,8 @@ body {
 }
 
 .block-header {
-  background: #1B011A;
-  padding: 4em 0em 1em 0em;
+  background: #000000;
+  padding: 4em 0em 0em 0em;
   width: 100%;
   color: #fff;
 }
@@ -310,11 +310,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background: url(../img/header-grafik.png) no-repeat top center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  cursor: pointer;
+}
+
+.cat video {
+	width: 100%;
 }
 
 .block-turquoise {
