@@ -366,7 +366,7 @@ body {
 #potion {
   position: absolute;
   right: 1em;
-  top: -18em;
+  bottom: -16em;
   height: 320px;
 }
 #potion img {
