@@ -47,6 +47,8 @@ overflow: hidden;
 
 .counter-row {
        margin: auto;
+	   font-weight: bold;
+	   font-size: 25pt;
 }
 
 
