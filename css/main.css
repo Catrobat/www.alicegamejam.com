@@ -555,3 +555,15 @@ body {
 	width: 30px;
 	margin-left: 0.5em;
 }
+
+.poster {
+	width: 26%;
+	min-width: 125px;
+	text-align: center;
+	float: left;
+	margin: 1em;
+}
+.poster img{
+	width: 100%;
+	max-width: 160px;
+}
